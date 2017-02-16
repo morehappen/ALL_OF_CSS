@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .father{
+            width: 800px;
+            padding: 20px;
+            border: 1px solid #aaaaaa;
+        }
+        .son1,.son2{
+            width: 300px;
+            height: 200px;
+            float: left;
+            background-color: red;
+        }
+        .son2{
+            background-color: blue;
+        }
+        .clear{
+            clear: both;
+        }
+        .father{
+            /*overflow: auto;*/
+            /*overflow: hidden;(2)第二种方法【一般推荐这个】：原理：设置了overflow不为
+            visible的元素，会生成一个BFC(块级格式化上下文)。根据BFC的特性，BFC在计算高度
+            的时候，浮动元素也会参与高度的计算。*/
+        }
+        /*.father:after{*/
+            /*content: '';*/
+            /*display: block;*/
+            /*height: 0;*/
+            /*visibility: hidden;*/
+            /*clear: both;*/
+        /*}*/
+        /*（3）伪类清除浮动法，伪对象清除浮动，height必须设置为0，content必须有，不一定*/
+        /*非要有值，可以为空。*/
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son1"></div>
+    <div class="son2"></div>
+    <!--<div class="clear"></div>（1）这是第一种方法：添加空标签，设置clear:both-->
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 200px;
+            height: 600px;
+            background: red;
+            float: left;
+            /*左侧浮动，右侧没有浮动，仅仅是左外边距*/
+        }
+        /*.box2{*/
+        /*（1）左侧浮动，右侧仅仅设置外边距，不浮动。*/
+            /*background: green;*/
+            /*margin-left: 200px;*/
+            /*height: 300px;*/
+        /*}*/
+        /*.box2{*/
+            /*background-color: blue;*/
+            /*overflow: hidden;*/
+            /*height: 300px;*/
+            /*/!*(2)左侧浮动，右侧不浮动，直接设置overflow：hidden属性(不设置overflow也行)。*/
+            /*@@注意：右边的那个div可以不设置他的宽度，但是高度必须*/
+            /*给定（div是空，如果你的div里面有文字那么就会自动撑高了）*!/*/
+        /*}*/
+        /*.box2{*/
+            /*float: left;*/
+            /*margin-left: 200px;*/
+            /*height: 100px;*/
+            /*background-color: greenyellow;*/
+            /*width: 100%;*/
+            /*@@@附加：这个不行的原因是width的宽度100%继承的是body的，直接铺满了。*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
