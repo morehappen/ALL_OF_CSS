@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .left{
+            width: 200px;
+            height: 600px;
+            background: red;
+            border: 1px solid #333;
+            float: left;
+            /*左侧浮动，右侧没有浮动，仅仅是左外边距*/
+        }
+        .right{
+        /*（1）左侧浮动，右侧仅仅加个margin-left，不浮动。*/
+            /*background: green;*/
+            /*border: 1px solid #333;*/
+            /*margin-left: 200px;*/
+            /*height: 300px;*/
+            /*word-break: break-all;*/
+        }
+        .right{
+            border: 1px solid #333;
+            background-color: blue;
+            height: 300px;
+            overflow: hidden;
+            word-break: break-all;
+            /*/!*(2)左侧浮动，右侧不浮动，直接设置overflow：hidden属性(不设置overflow也行)。*/
+            /*@@注意：右边的那个div可以不设置他的宽度，但是高度必须*/
+            /*给定（div是空，如果你的div里面有文字那么就会自动撑高了）。
+            且ie6下不兼容*!/*/
+        }
+        /*.right{*/
+            /*float: left;*/
+            /*margin-left: 200px;*/
+            /*height: 100px;*/
+            /*background-color: greenyellow;*/
+            /*width: 100%;*/
+            /*@@@附加：这个不行的原因是width的宽度100%继承的是body的，直接铺满了。*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="left">
+        <h4>left</h4>
+        <p>oooooooooooooo
+            0000000000000000
+            00000000000000000
+            ooooooooooooooo
+            ooooooooooooooo
+            000000000000000</p>
+    </div>
+    <div class="right">
+        <h4>right</h4>
+        <p>BBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+            888888888888888888888888888888888
+            BBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+            888888888888888888888888888888888</p>
+    </div>
+</body>
+</html>

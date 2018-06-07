@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .main {
+            float: left;
+            width: 100%;
+            height: 300px;
+            background-color: rgba(255, 0, 0, .5);
+        }
+        .left {
+            float: left;
+            width: 200px;
+            height: 300px;
+            margin-left: -100%;
+            background-color: rgba(0, 255, 0, .5);
+        }
+        .right {
+            float: left;
+            width: 180px;
+            height: 300px;
+            margin-left: -180px;
+            background-color: rgba(0, 0, 255, .5);
+        }
+        .container {
+        /*（1）为了不让两侧盖住内容，先加这个*/
+            padding-left: 210px;
+            padding-right: 190px;
+        }
+        /*（2）但是影响到了内部子元素，就继续纠正。*/
+        .left {
+            position: relative;
+            left: -210px;
+        }
+        .right {
+            position: relative;
+            right: -190px;
+        }
+    /*（3）但是缩小到一定宽度不行了，所以继续设置最小宽度*/
+        body {
+            min-width: 600px; /* 2*left + right */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            zheliyou henduowenzide zheliyou henduowenzidezheliyou henduowenzide
+            zheliyou henduowenzide zheliyou henduowenzidezheliyou henduowenzide
+            zheliyou henduowenzide zheliyou henduowenzidezheliyou henduowenzide
+            zheliyou henduowenzide zheliyou henduowenzidezheliyou henduowenzide
+            zheliyou henduowenzide zheliyou henduowenzidezheliyou henduowenzide
+        </div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

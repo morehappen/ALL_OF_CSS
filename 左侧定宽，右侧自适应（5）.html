@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .left{
+            width: 200px;
+            height: 600px;
+            background-color: red;
+            margin-right: -100%;
+            /*这个是核心，这个负100是相对于left来说的*/
+            float: left;
+        }
+        .content_right{
+            float: left;
+            width: 100%;
+            /*display: block;这个不要*/
+            /*height: 300px;这个不要*/
+            /*注意这个也要左浮动*/
+        }
+        .right{
+            background: green;
+            margin-left: 200px;
+            height: 300px;
+            -ms-word-break: break-all;
+            word-break: break-all;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div class="left"></div>
+<div class="content_right">
+    <div class="right">BBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+        888888888888888888888888888888888
+        BBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+        888888888888888888888888888888888</div>
+</div>
+</body>
+</html>

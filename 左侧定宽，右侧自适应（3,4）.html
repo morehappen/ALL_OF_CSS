@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .left{
+            position: absolute;
+            top:0;
+            left:0;
+            width:200px;
+            border: 1px solid black;
+            background: #ff0;
+            height: 180px;
+        }
+        .right{
+            /*margin-left:200px;*/
+            /*border: 1px solid #333;*/
+            /*background: #ccc;*/
+            /*word-break: break-all;*/
+        /*(1)左侧使用绝对定位，右侧使用margin-left，不定位*/
+        }
+        .right{
+            position: absolute;  top:0 ;
+            left:202px;
+            height: 100px;
+            background: #dddddd;
+            background: #808080;
+            background: #bbb;
+            border: 1px solid yellow;
+            word-break: break-all;
+            /*(2)左侧绝对定位，右侧也绝对定位*/
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <h4>left</h4>
+        <p>oooooooooooooo
+            0000000000000000
+            00000000000000000
+            ooooooooooooooo
+            ooooooooooooooo
+            000000000000000</p>
+    </div>
+    <div class="right">
+        <h4>right</h4>
+        <p>BBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+            888888888888888888888888888888888
+            BBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+            888888888888888888888888888888888</p>
+    </div>
+</body>
+</html>
