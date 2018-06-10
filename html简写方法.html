@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML简写方法</title>
+    <style>
+        .dd{
+            border-bottom: 2px solid red;
+        }
+        .color{
+            color:green;
+            font-size:22px;
+            font-weight:700;
+        }
+    </style>
+</head>
+<body>
+    <div class="sky">
+        div+.sky+tab<div class="color">【点号：自动带入类名（注意任何简写都不要空格，不然无法使用）】</div>
+    </div>
+    <div class="dd"></div>
+    <div id="moon">
+        div+#moon+tab<div class="color">【#号：自动带入id名】</div>
+    </div>
+    <div class="dd"></div>
+    <div title="fly">
+        div+[title=fly]+tab<div class="color">【[]号：自动带入属性名和属性值】</div>
+    </div>
+    <div class="dd"></div>
+    <div class="sky">
+        div+{元素内的文本}+tab<div class="color">【{}号：自动带入文本】</div>
+    </div>
+    <div class="dd"></div>
+    <div><div class="color">【{}号的注意事项：】</div>
+        <br>另外，在生成内容的时候，特别要注意前后的符号关系，虽然 a>{Click me} <br>
+        和 a{Click me} 生成的结构是相同的，但是加上其他的内容就不一定了，例如：</div>
+    <a href="">a is here</a><b>b is here【a{a is here}+b{b is here}】</b>
+    <a href="">a is here but son is b<b>b is here【a>{a is here but son is b}+b{b is here}】</b></a>
+    <div class="dd"></div>
+    <div>
+        <li class="sky">div+ > + li + tab</li><div class="color">【>号：自动带入子元素】</div>
+    </div>
+    <div class="dd"></div>
+    <p></p>
+    <div class="color">【+号：自动书写出同级元素，使用加号】</div>
+    <p>p + 【加号】 + p +tab书写出p的同级元素</p>
+    <div class="dd"></div>
+    <div>
+        <div class="color">【^号：后面是前面标签的上一级元素】</div>
+        <p>div + > + p + ^ + li + tab,div的子元素是p，li和div平级</p>
+    </div>
+    <li></li>
+    <div class="dd"></div>
+    <div class="color">【*号：重复多份】</div>
+    <li>li+{+这是li标签+}+*+3+tab</li>
+    <li>li+{+这是li标签+}+*+3+tab</li>
+    <li>li+{+这是li标签+}+*+3+tab</li>
+    <div class="dd"></div>
+    <div>
+        <div class="color">【()号：分组】</div>
+        div>(header>div>li*3)+footer>p
+        <br>【分组】
+        <header>
+            <div>
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+        </header>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+    <div class="dd"></div>
+    <div>
+        <div class="color">【$号：一旦进入就是编号功能加入，此处$将内容编号】</div>
+        div>li{$}*5
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </div>
+    <div class="dd"></div>
+    <div>
+        <div class="color">【$将类名编号】</div>
+        div>li.sky$*5
+        <li class="sky1">1</li>
+        <li class="sky2">2</li>
+        <li class="sky3">3</li>
+        <li class="sky4">4</li>
+        <li class="sky5">5</li>
+    </div>
+    <div class="dd"></div>
+    <div>
+        <div class="color">【多个$的进入：会将编号数字的位数延长】</div>
+        div>li.item$$$*5
+        <li class="item001">1</li>
+        <li class="item002">2</li>
+        <li class="item003">3</li>
+    </div>
+    <div class="dd"></div>
+    <div>
+        <div class="color">【使用 @N： 指定开始的序号】</div>
+        div>li{$@2}*3
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </div>
+    <div class="dd"></div>
+    <div>
+        <div class="color">【使用 @-N：倒序输出指定开始的序号】</div>
+        div>li{$@-3}*4
+        <li>6</li>
+        <li>5</li>
+        <li>4</li>
+        <li>3</li>
+    </div>
+    <div class="dd"></div>
+    <div class="lone">
+        <div class="color">【隐式标签：点跟着类名，默认是在说div元素】</div>
+        .lone
+    </div>
+</body>
+</html>

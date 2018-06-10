@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS简写方法</title>
+    <style>
+        .shorHand{
+            font-size:23px;
+            font-weight:700;
+            color:green;
+        }
+        .moon{
+            width: 1200px;
+            border-bottom:2px red solid;
+            margin-bottom:11px;
+        }
+    </style>
+</head>
+<body>
+<div class="sky">这是一个类名为sky的div元素</div>
+<div class="sky">
+    <div class="moon"><span class="shorHand">w100是</span> width: 100px;的简写</div>
+    <div class="moon"><span class="shorHand">w100p或者w100%是</span> width: 100%;的简写</div>
+    <div class="moon"><span class="shorHand">w100e[w100r是rem]是</span> width: 100em;的简写</div>
+    <div class="moon"><span class="shorHand">【-横杠号：】m10-20-10-20是[(1)如果是负值，多加一个横杠(2)
+        如果使用了单位px，em则可以省略掉横杠去间隔]</span>
+        margin: 10px 20px 10px 20px;的简写</div>
+    <div class="moon"><span class="shorHand">【+号：】h10px+m20px是[height: 10px;margin: 20px;]</span>
+        margin: 10px 20px 10px 20px;的简写</div>
+    <div class="moon"><span class="shorHand">
+        【浏览器css兼容性写法：前缀名-配合属性书写：比如（-border-radius:50%）】
+    </span>是-webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;的简写</div>
+
+</div>
+</body>
+</html>
