@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" name="angle" class="fly" value="2">sky
+    <input type="checkbox" name="angle" class="fly" value="1">moon
+
+
+    <input type="checkbox" name="angle" class="fly1" value="11">moon
+<script src="jquery.min.js"></script>
+<script>
+    $(".fly").attr("disabled","disabled");
+    $(".fly").each(function(i,v){
+        if($(v).val()==1){
+            $(v).prop('checked', true);
+        }
+    })
+    console.log($(".sky").val());//
+</script>
+</body>
+</html>
