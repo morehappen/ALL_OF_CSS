@@ -1,0 +1,83 @@
+//【1】语法：@声明一个变量
+//【1-1】下面的都是值变量
+@color: red;
+@bgColor: pink;
+@width: 100px;
+@height: @width + 50px;
+//【1-2】下面的都是选择器变量
+@mySelector: #sky1;
+@wrap: moon1;
+//【1-3】属性变量
+@borderStyle: border-style;
+//【1-4】url变量
+@images: "./img"; //需要加引号
+//【1-5】声明变量
+@skyRules: {
+  width: 600px;
+  height: 400px;
+  background-color: beige;
+};
+//【1-6】变量运算
+@widthagain:100px;
+@coloragain:#222;
+//【1-7】变量作用域
+@var: @a;
+@a: 100%;
+#sky6{
+  width: 1800px;
+  height: 70px;
+  .moon6{
+    width: @a;
+    @a:9%;
+    heigt:60px;
+    background-color: gainsboro;
+  }
+}
+//【1-8】变量定义变量
+@sky_str:'i am sky';
+@moon_str:'sky_str';
+#sky7::after{
+  content:@@moon_str;
+};
+
+//分割线；注意在顶部进行变量声明等操作的时候，必须进行分页结尾，不然会出现抱错。
+//【1-1】下面的都是值变量
+#sky{
+  width: @width;
+  height: @height;
+  color: @color;
+  background-color: @bgColor;
+};
+
+//【1-2】下面的都是选择器变量
+@{mySelector} {
+  color: green;
+}
+
+.@{wrap} {
+  background-color: gold;
+}
+
+//【1-3】属性变量
+#sky2 {
+  border: 1px;
+    @{borderStyle}: dotted;
+}
+
+//【1-4】URL变量
+#sky3 {
+  background: url("@{images}/round.png");
+}
+//【1-5】声明变量
+#sky4{
+  @skyRules();
+};
+#sky5{
+  //###此处有个坑，必须计算符左右加空格
+  width: @widthagain - 20;
+  height: @widthagain - 200*1;
+  margin:(@widthagain - 20)*5;
+  background-color: @coloragain*2;
+}
+
+

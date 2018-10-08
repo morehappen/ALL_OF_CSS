@@ -1,0 +1,27 @@
+/* Less */
+.boxShadow() {
+  box-shadow+: inset 0 0 10px #555;
+}
+#sky {
+  .boxShadow();
+  box-shadow+: 0 0 20px black;
+}
+/* 生成后的 CSS */
+//.main {
+//  box-shadow: inset 0 0 10px #555, 0 0 20px black;
+//}
+
+
+ /* Less,空格的使用技巧 */
+ .Animation() {
+  transform+_: scale(2);
+}
+#moon {
+  .Animation();
+  transform+_: rotate(15deg);
+}
+
+/* 生成的 CSS */
+// .main {
+//   transform: scale(2) rotate(15deg);
+// }

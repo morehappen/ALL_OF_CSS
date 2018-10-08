@@ -1,0 +1,42 @@
+#sky6 {
+  width: 1800px;
+  height: 70px;
+}
+#sky6 .moon6 {
+  width: 9%;
+  heigt: 60px;
+  background-color: gainsboro;
+}
+#sky7::after {
+  content: 'i am sky';
+}
+#sky {
+  width: 100px;
+  height: 150px;
+  color: #ff0000;
+  background-color: #ffc0cb;
+}
+#sky1 {
+  color: green;
+}
+.moon1 {
+  background-color: gold;
+}
+#sky2 {
+  border: 1px;
+  border-style: dotted;
+}
+#sky3 {
+  background: url("img/round.png");
+}
+#sky4 {
+  width: 600px;
+  height: 400px;
+  background-color: beige;
+}
+#sky5 {
+  width: 80px;
+  height: -100px;
+  margin: 400px;
+  background-color: #444444;
+}

@@ -1,0 +1,29 @@
+//【1】语法：@声明一个变量
+//【1-1】下面的都是值变量
+@color: red;
+@bgColor: pink;
+@width: 100px;
+#sky{
+  //& ：代表的上一层选择器的名字，此例便是header。
+  &:after{
+    content:"Less is more!";
+  }
+  color: red;
+  >#skyson{
+    color: yellow;
+    .moon{
+      color: blue;
+    }
+  }
+}
+//实战技巧：可以借助 Less 在元素中，去定义自己的私有样式。
+#sky2{
+  //这个地方的意思是，我们可以将原有的类名通过此方法重新写一次覆盖掉，从而达到自定义的效果
+  &.show{
+    display: block;
+  }
+}
+.show{
+  display: none;
+}
+

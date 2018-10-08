@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+    <SCRIPT LANGUAGE="JScript">
+        var targetImg = new Image();
+        var canvas = document.createElement('canvas'); //创建画图
+        canvas.width = swidth; //swidth为裁剪后的图像高度
+        canvas.height = sheight;
+        var cxt = canvas.getContext('2d');
+        cxt.drawImage(targetImg, sx, sy, swidth, sheight, 0, 0, swidth, sheight); //进行裁剪
+        targetImg.onload = function() {
+
+            var clipImage = canvas.toDataURL("image/png", 1); //获取裁剪后base64
+
+        }
+
+        targetImg.src = bolbImage; //原图像的base64
+
+        var htm = "<img src='" + PageImage + "' alt='img' />";
+        var popu =  window.open(openurl, "", "width=" + iwidth + ",height=" + iheight + "");
+        popu.onload = function() {
+            popu.document.getElementById("img").innerHTML = htm;
+            if (popu && popu.open && !popu.closed) {
+                popu.captionImage();
+            } //进行文件存储//saveImage(PageImage);}
+        }
+
+        function captionImage() {
+            FireShotAPI.copyPage(true);
+            setTimeout(function() {
+                window.close();
+            }, 1000);
+        }
+    </SCRIPT>
+</head>
+
+<body>
+    <div id="divId1">
+        <img src="../green.png" onclick="ButtonClick(this)">
+    </div>
+
+</body>
+
+</html>

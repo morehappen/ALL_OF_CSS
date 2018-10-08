@@ -1,0 +1,39 @@
+ /* Less */
+ #card(){
+    background: #723232;
+    .d(@w:300px){
+        width: @w;
+        
+        #a(@h:300px){
+            height: @h;//可以使用上一层传进来的方法
+            // width: @w;//这个地方解注后会报错，我还没搞明白为什么
+        }
+    }
+}
+#sky{
+    // width: 200px;
+    #card > .d > #a(100px); // 父元素不能加 括号
+}
+#moon{
+    #card .d();
+}
+#fly{
+    //不得单独使用命名空间的方法
+    //.d() 如果前面没有引入命名空间 #card ，将会报错
+
+    #card; // 等价于 #card();
+    .d(20px); //必须先引入 #card
+}
+
+
+//   /* 生成的 CSS */
+//   #sky{
+//     height:100px;
+//     width:300px;
+//   }
+//   #moon{
+//     width:300px;
+//   }
+//   #fly{
+//     width:20px;
+//   }

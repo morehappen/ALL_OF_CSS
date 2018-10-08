@@ -1,0 +1,17 @@
+ /* Less */
+ .average(@x, @y) {
+    @average: ((@x + @y) / 2);
+  }
+
+  div {
+      width: 400px;
+      height: 400px;
+      background-color: pink;
+    .average(16px, 50px); // 调用 方法
+    padding: @average;    // 使用返回值
+  }
+
+  /* 生成的 CSS */
+//   div {
+//     padding: 33px;
+//   }

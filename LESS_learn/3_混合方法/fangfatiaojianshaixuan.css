@@ -1,0 +1,10 @@
+/* Less */
+#moon {
+  box-shadow: 1px 4px 30px #ff0000;
+  text-shadow: 4px 4px 30px #ff0000;
+}
+#sky {
+  border: solid #999999 200px;
+  background: #111111;
+  font-size: 40px;
+}
