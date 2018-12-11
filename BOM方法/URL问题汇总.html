@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<script>
+    var _pathname = window.location.pathname;
+    console.log(_pathname);
+    //【结果】/MY_CODE_git/study_HTML_CSS/BOM%E6%96%B9%E6%B3%95/URL%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB.html
+
+    var _search = window.location.search;
+    console.log(_search);
+    // 【结果】?_ijt=mcp84l6aknjsdridkj1d2l93to
+
+    var _tag = search.slice(1).split(";")[0].split("=")[1];
+    console.log(_tag);
+    // pathname 属性是一个可读可写的字符串，可设置或返回当前 URL 的路径部分。
+
+</script>
+
+</body>
+</html>
