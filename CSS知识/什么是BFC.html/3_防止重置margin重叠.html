@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p {
+            color: #f55;
+            background: #fcc;
+            width: 200px;
+            line-height: 100px;
+            text-align: center;
+            margin: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Haha</p>
+    <p>Hehe</p>
+</body>
+<script>
+    // 两个p之间的距离为100px，发送了margin重叠。 根据BFC布局规则第二条：Box垂直方向的距离由margin决定。属于同一个BFC的两个相邻Box的margin会发生重叠
+    // 我们可以在p外面包裹一层容器，并触发该容器生成一个BFC。那么两个P便不属于同一个BFC，就不会发生margin重叠了。 代码：
+    //     <style>
+    //     .wrap {
+    //         overflow: hidden;//该属性生成了BFC
+    //     }
+    //     p {
+    //         color: #f55;
+    //         background: #fcc;
+    //         width: 200px;
+    //         line-height: 100px;
+    //         text-align:center;
+    //         margin: 100px;
+    //     }
+    // </style>
+    // <body>
+    //     <p>Haha</p>
+    //     <div class="wrap">
+    //         <p>Hehe</p>
+    //     </div>
+    // </body>
+
+
+    // 1，2，3案例中，都体现了BFC布局规则第五条：BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。反之也如此。
+
+    // 因为BFC内部的元素和外部的元素绝对不会互相影响，因此， 当BFC外部存在浮动时，它不应该影响BFC内部Box的布局，
+    // BFC会通过变窄，而不与浮动有重叠。同样的，当BFC内部有浮动时，为了不影响外部元素的布局，BFC计算高度时会包括浮动的高度。避免margin重叠也是这样的一个道理。
+</script>
+
+</html>

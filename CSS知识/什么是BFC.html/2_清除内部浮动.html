@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .par {
+            border: 5px solid #fcc;
+            width: 300px;
+        }
+        
+        .child {
+            border: 5px solid #f66;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="par">
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+<script>
+    //这里解释了为什么overflow：hidden能够清楚浮动，因为该属性生成了BFC，而计算BFC的高度的时候，浮动元素也是参与计算的
+
+    // 根据BFC布局规则第六条：计算BFC的高度时，浮动元素也参与计算
+    // 为达到清除内部浮动，我们可以触发par生成BFC，那么par在计算高度时，par内部的浮动元素child也会参与计算。代码：.par {overflow: hidden;}
+</script>
+
+</html>
