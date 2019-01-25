@@ -1,0 +1,63 @@
+.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .father{
+			display: -webkit-flex;
+			display: flex;
+			
+			/* 控制宽度相等 */
+			-webkit-flex:1;
+			flex:1;
+			
+			
+			/* 控制方向：默认是row，row-reverse反向横，column竖，column-reverse反向竖； */
+			/* nowrap,不换行，wrap换行，wrap，反向换行 */
+			flex-flow: column-reverse nowrap;
+			
+			/* 横向排控制方式：默认flex-start,右靠flex-end，居中center，左右靠space-between，距离平分：space-around */
+			justify-content: center;
+			-webkit-justify-content: space-between;
+			
+			/* 纵向排控制方式：默认flex-start,底靠flex-end，居中center，基线对齐baseline，高度相同：stretch */
+			align-items: stretch;
+			
+			/* 盒子内子盒子较多，控制群体放置方式：flex-start左上角，flex-end左下角，center群体中间，上下距离相同， */
+			/* space-betweend第一行贴顶，最后一行贴底，space-around多行横向下来，每行距离相同，stretch拉伸高度一致， */
+			/* 但是注意，每一行高度一致，有可能两行高不不一致【该属性必须要求flex-flow中有wrap】 */
+			align-content: stretch;
+		}
+		.father .sonLeft{
+			/* 控制顺序，比如三栏布局，先写main，给order为2。类似z-index数比大小就行 */
+			-webkit-flex:1;
+			order:1;
+			/* align-self: 应用在子项目中，会覆盖align-items，比如都去上面，它一个去下面 */
+			align-self: flex-end;
+		}
+        .banner{
+            /* 这个案例的难点是，右侧的按钮都要底部对齐，左侧的logo还要和右侧拉开距离。通过banner的flex-end做到了 */
+            /* 让tab按钮底部对齐，而margin-right的auto做到了拉开距离，这里的margin是个技巧 */
+            display: -webkit-flex;
+			display: flex;
+            -webkit-align-items:flex-end;
+            align-items: flex-end;
+        
+        }
+        .logo{
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <p class="logo">Our Company</p>
+        <a href="#">tab1</a>
+        <a href="#" class="highlinght">tab1</a>
+        <a href="#">tab1</a>
+    </div>
+</body>
+</html>
