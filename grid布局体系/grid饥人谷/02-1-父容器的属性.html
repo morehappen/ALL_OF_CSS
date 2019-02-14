@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            /* 【术语】将元素定义为 grid contaienr，并为其内容建立新的网格格式化上下文(grid formatting context)。 */
+            /* 注意：column, float, clear, 以及 vertical-align 对一个 grid container 没有影响 */
+            /* 【API】三个值：
+            grid - 生成一个块级(block-level)网格
+            inline-grid - 生成一个行级(inline-level)网格
+            subgrid - 如果你的 grid container 本身就是一个 grid item（即,嵌套网格），你可以使用这个属性来表示你想从它的
+            父节点获取它的行/列的大小，而不是指定它自己的大小。 */
+            display: grid;
+            /*【术语】使用以空格分隔的多个值来定义网格的列和行。这些值表示轨道大小(track size)，它们之间的空格代表表格线(grid line)。 */
+            /* 【1-分界线命名问题】(如果未显示的给网格线命名)，轨道值之间仅仅有空格时，网格线会被自动分配数字名称 */
+            /* 比如此处有5列，就有6个列分界线，由于未命名所以列分界线的名字被命名为数字，1，2,3,4,5,6 */
+            grid-template-columns: 40px 50px auto 50px 40px;
+            /* 但你可以给网格线指定确切的命名。 注意中括号里的网格线命名语法： */
+            /* grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end]; */
+            /* grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line]; */
+            /* 需要注意的是，一个网格线可以有不止一个名字。例如，这里第2条网格线有两个名字：row1-end 和 row2-start： */
+            grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
+            /* 【2-分界线数值重复简写问题】如果你的定义中包含重复的部分，则可以使用repeat() 符号来简化写法： */
+            /* grid-template-columns: repeat(3, 20px [col-start]) 5%; */
+            /* 等价于下面的布局 */
+            /* 【标记】我注意到，这里的名字都有中划线间隔 */
+            /* grid-template-columns: 20px [col-start] 20px [col-start] 20px [col-start] 5%; */
+            /* 【3-自由空间数值上限控制】自由空间是在排除所有不可伸缩的 grid item 之后计算得到的。 在下面的示例中，fr单位可用的自由空间总量不包括50px: */
+            /* grid-template-columns: 1fr 50px 1fr 1fr; */
+            grid-column-gap: 1px;
+            /* grid-column-gap，设置行分界线，gap是间隙和缺口的意思 */
+            grid-row-gap: 1px;
+            /* 【术语】Grid Cell */
+            /* 两个相邻的行和两个相邻的列网格线之间的空间。它是网格的一个“单元”。 下面是行网格线1和2之间以及列网格线2和3的网格单元。 */
+            /* 【术语】Grid Area */
+            /* 四个网格线包围的总空间。 网格区域可以由任意数量的网格单元组成。 下面是行网格线1和3以及列网格线1和3之间的网格区域。 */
+            background-color: black;
+            /* 【术语】Grid Track */
+            /* 相邻网格线之间的空间，比如第二行和第三行之间的网络轨道，第二列和第三列之间的网络轨道 */
+        }
+        
+        .item {
+            background-color: #0069b3;
+            /* CSS Grid 没有替换 flexbox 属性，尽可能保留了它的功能。我们甚至可以将这些属性与 CSS Grid 混用 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 70px;
+            color: white;
+            line-height: 1;
+            font-family: 'hobeaux-rococeaux-background', Helvetica;
+            font-weight: 200;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 【术语】Grid Container
+        设置了 display: gird 的元素。网格布局容器， 这是所有grid item的直接父项。 在下面的例子中，.container就是是 grid container。 -->
+    <div class="container">
+        <!-- 【术语】Grid Item。网格布局容器的直接子元素
+            Grid 容器的孩子（直接子元素）。下面的 .item 元素就是 grid item，但 .sub-item不是。 -->
+        <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+    </div>
+</body>
+
+</html>

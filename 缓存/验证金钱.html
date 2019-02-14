@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+</head>
+
+<body>
+    <input type="text" class="money_input">
+</body>
+<script>
+    var regex1 = /^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/;
+    $(".money_input").change(function() {
+        var money_reg_res = regex1.test($(".money_input").val());
+        console.log(money_reg_res);
+    })
+    var money_reg_res = regex1.test($(".money_input").val());
+    console.log(money_reg_res);
+</script>
+
+</html>

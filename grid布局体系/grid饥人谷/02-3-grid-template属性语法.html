@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+        /* 由于 grid-template 不会重置隐式网格属性（grid-auto-columns，grid-auto-rows和grid-auto-flow）， */
+        /* 而这可能是大多数情况下你想要做的。因此建议使用grid属性来代替grid-template。 */
+        /* 使用grid属性我觉得是在指grid-template-rows这些更具体的属性。意思是权重更高 */
+        
+        .container {
+            display: grid;
+            /* 设置为三行，第一行和第二行都是25px高 */
+            /* grid-template-rows: [row1-start] 25px [row1-end row2-start] 25px [row2-end]; */
+            /* 设置为三列，第二列为50px，其余为自动 */
+            /* grid-template-columns: auto 50px auto; */
+            /* grid-template-areas: "header header header" "footer footer footer"; */
+        }
+        
+        .container {
+            /* grid-template属性的简写 */
+            /* 【语法】grid-template-rows/<grid-template-columns，先写行再写列 */
+            /* （1）此处相当于，先写了起始行分界线，然后是重复模式，然后是布局宽度比例，然后是第二行的分界线名称，然后重复以上 */
+            /* （2）反斜杠*/
+            /* （3）开始写列  */
+            grid-template: [row1-start] "header header header" 25px [row1-end] [row2-start] "footer footer footer" 25px [row2-end] / auto 50px auto;
+        }
+        
+        .item-a {
+            grid-area: header;
+            background-color: yellow;
+        }
+        
+        .item-b {
+            grid-area: main;
+            background-color: blue;
+        }
+        
+        .item-c {
+            grid-area: sidebar;
+            background-color: pink;
+        }
+        
+        .item-d {
+            grid-area: footer;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-a">header</div>
+        <!-- <div class="item item-b">main </div> -->
+        <!-- <div class="item item-c">sidebar</div> -->
+        <div class="item item-d">footer</div>
+    </div>
+</body>
+
+</html>

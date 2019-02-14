@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            display: grid;
+        }
+        
+        .container {
+            grid: 200px auto / 1fr auto 1fr;
+            /* 上面代码相当于下面的代码 */
+            grid-template-rows: 200px auto;
+            grid-template-columns: 1fr auto 1fr;
+            grid-template-areas: none;
+        }
+        
+        .item-a {
+            background-color: yellow;
+        }
+        
+        .item-b {
+            background-color: blue;
+        }
+        
+        .item-c {
+            background-color: pink;
+        }
+        
+        .item-d {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-a">header</div>
+        <div class="item item-b">main </div>
+        <div class="item item-c">sidebar</div>
+        <div class="item item-d">footer</div>
+        <div class="item item-a">header</div>
+        <div class="item item-b">main </div>
+        <div class="item item-c">sidebar</div>
+        <div class="item item-d">footer</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+        /* 【语法】justify-items：行对齐，align-items, 列对齐 */
+        /* 沿着行轴对齐网格内的内容（与之对应的是 align-items, 即沿着列轴对齐），该值适用于容器内的所有的 grid items。 */
+        /* 值： */
+        /* start: 内容与网格区域的左端对齐 */
+        /* end: 内容与网格区域的右端对齐 */
+        /* center: 内容位于网格区域的中间位置 */
+        /* stretch: 内容宽度占据整个网格区域空间(这是默认值) */
+        
+        .container {
+            display: grid;
+            /* grid-template-columns: 60px 60px; */
+            grid-template-rows: 90px 90px
+        }
+        
+        .item-a {
+            /* grid-area: header; */
+            background-color: yellow;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        
+        .item-b {
+            /* grid-area: main; */
+            background-color: blue;
+            /* 【语法】下面的代码表示：网格项目item-b开始于列网格线 5 并结束于在列网格线 6。行位置也是同理 */
+            /* 因为我们引用不存在的网格线，宽度为0的隐式轨道的就会被创建用与填补间隙 */
+            grid-column: 5 / 6;
+            grid-row: 2 / 3;
+            /* 我们可以使用 grid-auto-columns 和 grid-auto-rows属性来指定这些隐式轨道的宽度： */
+            grid-auto-columns: 60px;
+        }
+        
+        .item-d {
+            /* grid-area: footer; */
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-a">header</div>
+        <div class="item item-b">main </div>
+        <!-- <div class="item item-d">footer</div> -->
+    </div>
+</body>
+
+</html>

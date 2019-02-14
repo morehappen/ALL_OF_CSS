@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        handleComparison() {
+            if (this.compareIdList.length !== 2) {
+                this.$notify({
+                    title: '选择出局出错',
+                    message: '必须选中2跳数据',
+                    type: 'error'
+                });
+                return false;
+            }
+            const params = {
+                prtlIdHost: this.compareIdList[0].me_id,
+                prtlId: this.compareIdList[1].me_id
+            };
+            return new Promise((resolve, reject) => {
+                compareProtocol(params).then(res => {
+                    this.oldformDetailsData = res.adProtocol;
+                    this.normalformDetailsData = res.data;
+                    this.comparison = true;
+                    console.log(res);
+                    resolve();
+                }).catch(err => {
+                    console.log(err);
+                    reject();
+                })
+            })
+        },
+    </script>
+</body>
+
+</html>

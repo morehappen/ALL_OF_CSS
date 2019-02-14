@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            display: grid;
+            /* 列 */
+            grid-template-columns: 100px 50px 100px;
+            /* 行， */
+            grid-template-rows: 80px auto 80px;
+            /* 列间隔的宽度 */
+            /* grid-column-gap: 10px; */
+            /* 行间隔的高度 */
+            /* 如果没有指定 grid-row-gap，则会被设置为与 grid-column-gap 相同的值。 */
+            /* grid-row-gap: 5px; */
+            /*【语法】 以上可以简写如下，grid-gap: <grid-row-gap> <grid-column-gap>;先写行界线高度，再写列界线宽度 */
+            grid-gap: 5px 10px;
+            grid-template-areas: "header header header" "main main ." "footer footer footer";
+        }
+        
+        .item-a {
+            grid-area: header;
+            background-color: yellow;
+        }
+        
+        .item-b {
+            grid-area: main;
+            background-color: blue;
+        }
+        
+        .item-d {
+            grid-area: footer;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-a">header</div>
+        <div class="item item-b">main </div>
+        <div class="item item-d">footer</div>
+    </div>
+</body>
+
+</html>

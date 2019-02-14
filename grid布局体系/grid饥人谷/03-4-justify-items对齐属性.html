@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+        /* 【语法】justify-items：行对齐，align-items, 列对齐 */
+        /* 沿着行轴对齐网格内的内容（与之对应的是 align-items, 即沿着列轴对齐），该值适用于容器内的所有的 grid items。 */
+        /* 值： */
+        /* start: 内容与网格区域的左端对齐 */
+        /* end: 内容与网格区域的右端对齐 */
+        /* center: 内容位于网格区域的中间位置 */
+        /* stretch: 内容宽度占据整个网格区域空间(这是默认值) */
+        
+        .container {
+            display: grid;
+            /* 列 */
+            grid-template-columns: 100px 50px 100px;
+            /* 行， */
+            grid-template-rows: 80px auto 80px;
+            grid-gap: 5px 10px;
+            grid-template-areas: "header header header" "main main ." "footer footer footer";
+            /* 沿着列轴对齐grid item 里的内容，区别是，一个是网格内部的内容的对齐方式 */
+            /* 另一个是在网格容器内的位置控制，同时能够拉伸扩展网格自身的宽高 */
+            /* 右对齐 */
+            /* 底部对齐 */
+            justify-items: end;
+            align-items: end;
+        }
+        
+        .item-a {
+            grid-area: header;
+            background-color: yellow;
+        }
+        
+        .item-b {
+            grid-area: main;
+            background-color: blue;
+        }
+        
+        .item-d {
+            grid-area: footer;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-a">header</div>
+        <div class="item item-b">main </div>
+        <div class="item item-d">footer</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+        /* 我们不再需要使用臃肿的 CSS 框架，也不用管一大堆繁琐的布局 */
+        /* grid-template-rows是CSS Grid 中真正的革命性意义的属性，即行高的控制 */
+        
+        .wrapper {
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr;
+            /* grid-template-rows设置行高关系，下面代码表示第二行是第一行的行高的三倍 */
+            /* 这可能看起来很简单，以前我们从没真正做到过这一点。我们总是不得不在一个特定元素 */
+            /* 上设置最小高度或者改变类名。我们以前从没以现在这样的方式创建过行之间的关系，这就是 CSS Grid 强大之处。 */
+            grid-template-rows: 1fr 3fr;
+            background-color: black;
+            grid-column-gap: 1px;
+            /* grid-column-gap，设置行分界线，gap是间隙和缺口的意思 */
+            grid-row-gap: 1px;
+        }
+        
+        .letter {
+            background-color: #0069b3;
+            /* CSS Grid 没有替换 flexbox 属性，尽可能保留了它的功能。我们甚至可以将这些属性与 CSS Grid 混用 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 70px;
+            color: white;
+            line-height: 1;
+            font-family: 'hobeaux-rococeaux-background', Helvetica;
+            font-weight: 200;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 【术语】Grid Item，gird容器的直接子元素 -->
+        <div class="letter">
+            A
+        </div>
+        <div class="letter">
+            B
+        </div>
+        <!-- 因为我们已经将其设置成了两列，所以这两个字母的 div 直接被放在了它们下面，并且正好是 1fr宽： -->
+        <div class="letter">
+            C
+        </div>
+        <div class="letter">
+            D
+        </div>
+    </div>
+</body>
+
+</html>

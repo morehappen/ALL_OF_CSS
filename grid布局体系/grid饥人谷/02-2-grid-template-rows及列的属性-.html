@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: auto;
+            /*【术语】grid-area属性指定的网格区域的名称来定义网格模板 */
+            /* 注意：下面的header和下面的main都在直接子元素的类名中的grid-area设置了名字 */
+            /* 重复网格区域的名称导致内容扩展到这些单元格。 点号表示一个空单元格 */
+            /* [标记]你的声明中的每一行都需要有相同数量的单元格。 */
+            grid-template-areas: "header header header ." "main main .   sidebar" "footer footer footer footer";
+        }
+        
+        .item-a {
+            grid-area: header;
+            background-color: yellow;
+        }
+        
+        .item-b {
+            grid-area: main;
+            background-color: blue;
+        }
+        
+        .item-c {
+            grid-area: sidebar;
+            background-color: pink;
+        }
+        
+        .item-d {
+            grid-area: footer;
+            background-color: green;
+        }
+        
+        .item {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-a">header</div>
+        <div class="item item-b">main </div>
+        <div class="item item-c">sidebar</div>
+        <div class="item item-d">footer</div>
+    </div>
+</body>
+
+</html>

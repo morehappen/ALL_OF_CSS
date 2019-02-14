@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            /* 直接父元素必须设置，从而开启网格布局，grid被称为网格布局 */
+            /* 【术语】Grid Container，网格容器 */
+            display: grid;
+            /* 想让两个字母并排排列的话： */
+            /* grid-template-columns用来创建列 */
+            /* 下面代码创建一个两列的网格，1fr是比例单位，表示两列等宽。template是模板的意思 */
+            /* 当我们随意调整数值，会带来比例变化，数量会调整列的数量 */
+            grid-template-columns: 3fr 1fr 1fr;
+            /* grid-column-gap设置列之间的分界线 */
+            /* 【术语】Grid Line，分界线，可以是横着的行分界线，也可以是竖着的列分界线 */
+            /* grid-column-gap，设置列分界线，gap是间隙和缺口的意思 */
+            grid-column-gap: 1px;
+            /* grid-column-gap，设置行分界线，gap是间隙和缺口的意思 */
+            grid-row-gap: 1px;
+            /* 【术语】Grid Cell */
+            /* 两个相邻的行和两个相邻的列网格线之间的空间。它是网格的一个“单元”。 下面是行网格线1和2之间以及列网格线2和3的网格单元。 */
+            /* 【术语】Grid Area */
+            /* 四个网格线包围的总空间。 网格区域可以由任意数量的网格单元组成。 下面是行网格线1和3以及列网格线1和3之间的网格区域。 */
+            background-color: black;
+            /* 【术语】Grid Track */
+            /* 相邻网格线之间的空间，比如第二行和第三行之间的网络轨道，第二列和第三列之间的网络轨道 */
+        }
+        
+        .item {
+            background-color: #0069b3;
+            /* CSS Grid 没有替换 flexbox 属性，尽可能保留了它的功能。我们甚至可以将这些属性与 CSS Grid 混用 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 70px;
+            color: white;
+            line-height: 1;
+            font-family: 'hobeaux-rococeaux-background', Helvetica;
+            font-weight: 200;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 【术语】Grid Container
+        设置了 display: gird 的元素。网格布局容器， 这是所有grid item的直接父项。 在下面的例子中，.container就是是 grid container。 -->
+    <div class="container">
+        <!-- 【术语】Grid Item。网格布局容器的直接子元素
+            Grid 容器的孩子（直接子元素）。下面的 .item 元素就是 grid item，但 .sub-item不是。 -->
+        <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+    </div>
+</body>
+
+</html>

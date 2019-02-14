@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            display: grid;
+            /* grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end]; */
+            /* grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line]; */
+            /* 需要注意的是，一个网格线可以有不止一个名字。例如，这里第2条网格线有两个名字：row1-end 和 row2-start： */
+            grid-template-columns: [row1-start] 225px [row1-end row2-start] 225px [row2-end];
+            background-color: black;
+        }
+        
+        .item {
+            background-color: #0069b3;
+            /* CSS Grid 没有替换 flexbox 属性，尽可能保留了它的功能。我们甚至可以将这些属性与 CSS Grid 混用 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 70px;
+            color: white;
+            line-height: 1;
+            font-family: 'hobeaux-rococeaux-background', Helvetica;
+            font-weight: 200;
+            cursor: pointer;
+            transition: all .3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 【术语】Grid Container
+        设置了 display: gird 的元素。网格布局容器， 这是所有grid item的直接父项。 在下面的例子中，.container就是是 grid container。 -->
+    <div class="container">
+        <!-- 【术语】Grid Item。网格布局容器的直接子元素
+            Grid 容器的孩子（直接子元素）。下面的 .item 元素就是 grid item，但 .sub-item不是。 -->
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+    </div>
+</body>
+
+</html>
