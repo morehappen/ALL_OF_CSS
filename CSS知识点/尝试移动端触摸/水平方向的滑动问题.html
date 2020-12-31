@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #big_bar_box {
+            width: 100%;
+            height: 22rem;
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="big_bar_box">
+        这里有很多字，可以测试垂直方向的手指滑动问题。
+    </div>
+</body>
+<script>
+    var startX = 0;
+    var endX = 0;
+    var targetDom = document.getElementById("big_bar_box");
+    targetDom.addEventListener("touchstart", touchStart, false);
+    targetDom.addEventListener("touchmove", touchMove, false);
+    targetDom.addEventListener("touchend", touchEnd, false);
+
+    function touchStart(event) {
+        var touch = event.touches[0];
+        startX = touch.pageX; //
+    };
+
+    function touchMove(event) {
+        var touch = event.touches[0];
+        endX = startX - touch.pageX;
+    }
+
+    function touchEnd(event) {
+        //100是给定触上下方向摸起始的坐标差
+        // var targetDom = document.getElementById('big_bar_mask');
+        // currentTopY = targetDom.getBoundingClientRect().top;
+        // var sign_num = this_.big_bar_top - currentTopY;
+        console.log(endX);
+        if (endX > 100) {
+            console.log("滑动距离超过35px");
+            // 在这里开始进行动画效果。
+            // this_.big_mask_flag = 1;
+            // var color_change_base = endY / 100;
+            // targetDom.style.background = 'rgba(51, 51, 51,' + color_change_base + ')';
+        } else {
+            console.log("滑动距离《 35px");
+        }
+        // if (sign_num < 25) {
+        //     this_.big_mask_flag = 0;
+        // }
+        //如果不重置，会出现问题
+        endX = 0;
+    }
+</script>
+
+</html>

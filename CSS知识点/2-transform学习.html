@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3中的transition属性详解</title>
+    <style>
+        #test {
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+            transition: width 2s, height 2s;
+            /* transition-property为width，定义过渡效果的css属性名称是宽度
+            transition-duration为2s，规定完成过渡效果需要的时间，默认值是秒
+            transition-timing-function此处为ease，默认值
+            transition-delay：0；此处默认为两秒 */
+        }
+        
+        #test:hover {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test"></div>
+</body>
+<script>
+    // CSS transition 过渡 详解
+    // 【1】过渡属性详解
+    //（1）transition-property：
+    // 规定应用过渡效果的 CSS 属性的名称（当指定的CSS属性改变时，过渡效果开始），其默认值为 all 。
+
+    //（2）transition-duration：
+    // 规定完成过渡效果需要的时间（单位为 s 或 ms），其默认值为 0s ，意味着如果不指定这个属性，将不会呈现过渡效果。
+
+    //（3）transition-timing-function：
+    // 规定过渡效果的时间曲线。
+
+    // 默认 ease ：慢速开始，中间变快，慢速结束；相当于 cubic-bezier(0.25, 0.1, 0.25, 1)。
+
+    // 可选 liner：匀速运动；相当于 cubic-bezier(0, 0, 1, 1)。
+
+    // 可选 ease-in：慢速开始；相当于 cubic-bezier(0.42, 0, 1, 1)。
+
+    // 可选 ease-out：慢速结束；相当于 cubic-bezier(0, 0, 0.58, 1)
+
+    // 可选 ease-in-out：慢速开始，慢速结束；相当于 cubic-bezier(0.42, 0, 0.58, 1)
+
+    // 可选 cubic-bezier(n, n, n, n)：在 bezier 函数中自定义 0 ~ 1 之间的数值。
+
+    // 贝塞尔时间曲线详解。。。
+
+    //（4）transition-delay：
+    // 规定过渡效果的延迟时间，默认为 0s 。
+    // （附加）复合属性
+    // transition: width 2s linear;//在使用复合属性定义过渡效果时，子属性之间用空格分隔。
+    // transition: width 2s ease-in-out, height 2s ease-in-out;//可以指定多个值，当指定多个值时，中间用逗号分隔。
+</script>
+
+</html>

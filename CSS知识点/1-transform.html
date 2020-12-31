@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>transform元素变换</title>
+    <style>
+        div[class^="trans"] {
+            height: 30px;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            margin-top: 50px;
+        }
+        
+        .trans-rotate {
+            width: 100px;
+            background: green;
+            -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+        }
+        
+        .trans-skew {
+            width: 240px;
+            background: orange;
+            -webkit-transform: skew(10deg, 10deg);
+            -moz-transform: skew(10deg, 10deg);
+            transform: skew(10deg, 10deg);
+        }
+        
+        .trans-scale {
+            width: 100px;
+            color: black !important;
+            background: yellow;
+            -webkit-transform: scale(1.5);
+            transform: scale(0.8);
+            /*大于1放大，小于1缩小*/
+        }
+        
+        .trans-new-translate {
+            width: 160px;
+            color: black!important;
+            background: yellow;
+            -webkit-transform: translate(50px, 100px);
+            transform: translate(50px, 10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="trans-rotate">rotate()旋转</div>
+        <div class="trans-skew">skew()扭曲,改变形状，不旋转</div>
+        <div class="trans-scale">scale()缩小</div>
+        <div>
+            <div class="trans-org-translate">translate原来位置</div>
+            <div class="trans-new-translate">translate移动后位置</div>
+            <!-- 象征性的写了两个，其实两个并不重合 -->
+        </div>
+    </div>
+</body>
+
+</html>

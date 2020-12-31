@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3中的transition属性详解</title>
+    <style>
+        #test {
+            width: 100px;
+            height: 100px;
+            background-color: cyan;
+            transition: width 2s, height 2s;
+        }
+        
+        #test:hover {
+            width: 300px;
+            height: 300px;
+            /* 但是如果在 hover 状态下也设置了 transition 属性，则 hover 状态下的为前进状态，非 hover 状态下的为反向状态。 */
+            transition: width 5s, height 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test"></div>
+</body>
+<script>
+    //  【1】过渡阶段详解：
+    //（1）过渡分为两个阶段：前进（forward）和反向（reverse）。
+    //（2）若前进阶段还未完成就进入反向阶段，则反向阶段的初始值为前进阶段结束时的瞬时值。
+    //（3）以 :hover 伪类为例，如果在非 hover 状态下设置了 transition 属性，相当于设置了反向状态，此时前进和反向是一致的。
+</script>
+
+</html>

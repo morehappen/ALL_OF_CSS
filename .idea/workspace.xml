@@ -2,128 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97779b0c-6909-40f5-bb74-29f5cb6aaab3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/BOM方法/scrollTo()方法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LESS_learn/3_混合方法/6.属性拼接方法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LESS_learn/3_混合方法/shuxingpinjie.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/1_布局.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/2_1弹框遮罩_ts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/2_2弹框遮罩_官网demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/3.1_分页.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/3._分页.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/b_表单.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layUI_demo/dist/layui.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,6 +18,7 @@
     <session id="-880340060">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.opened" value="2" />
@@ -178,12 +64,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LESS_learn/3_混合方法/7.调用返回值的一个实战技巧.html">
+      <file leaf-file-name="3._分页.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/layUI_demo/3._分页.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-              <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            <state relative-caret-position="265">
+              <caret line="215" column="25" lean-forward="true" selection-start-line="215" selection-start-column="25" selection-end-line="215" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -259,7 +144,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="483" />
     <option name="y" value="30" />
     <option name="width" value="1476" />
@@ -280,31 +168,25 @@
             <path>
               <item name="study_HTML_CSS" type="b2602c69:ProjectViewProjectNode" />
               <item name="study_HTML_CSS" type="462c0819:PsiDirectoryNode" />
-              <item name="LESS_learn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="study_HTML_CSS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="study_HTML_CSS" type="462c0819:PsiDirectoryNode" />
-              <item name="LESS_learn" type="462c0819:PsiDirectoryNode" />
-              <item name="3_混合方法" type="462c0819:PsiDirectoryNode" />
+              <item name="layUI_demo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/许岩/lhjc" />
+    <property name="last_opened_file_path" value="D:/WORK_CODE" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -380,45 +262,47 @@
       <workItem from="1529721213835" duration="6000" />
       <workItem from="1538279601770" duration="177000" />
       <workItem from="1538279790639" duration="383000" />
-      <workItem from="1538286229981" duration="19586000" />
+      <workItem from="1538286229981" duration="20833000" />
+      <workItem from="1539603227849" duration="212000" />
+      <workItem from="1539603463800" duration="285000" />
+      <workItem from="1549965523411" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20733000" />
+    <option name="totallyTimeSpent" value="22480000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14330874" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1444563" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,6 +312,55 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/LESS方法/sky_test.css" />
+    <entry file="file://$PROJECT_DIR$/LESS方法/1.html" />
+    <entry file="file://$PROJECT_DIR$/输入框的placeholder.html" />
+    <entry file="file://$PROJECT_DIR$/LESS_learn/sky_test.less" />
+    <entry file="file://$PROJECT_DIR$/LESS_learn/less.js" />
+    <entry file="file://$PROJECT_DIR$/LESS_learn/1.html" />
+    <entry file="file://$PROJECT_DIR$/LESS_learn/1._变量/sky_test.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="71" column="6" lean-forward="true" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LESS_learn/1._变量/1.变量.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/选择器相关测试/选择器.html" />
+    <entry file="file://$PROJECT_DIR$/LESS_learn/2_嵌套/sky_test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LESS_learn/2_嵌套/sky_test.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LESS_learn/2_嵌套/2_嵌套.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LESS_learn/2_嵌套/2.1_媒体查询和less.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/layUI_demo/dist/_fenye.json" />
     <entry file="file://$PROJECT_DIR$/layUI_demo/dist/s_数据表格.html" />
     <entry file="file://$PROJECT_DIR$/layUI_demo/3.1_分页.html">
@@ -474,21 +407,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/layUI_demo/3._分页.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2400">
-          <caret line="276" column="41" selection-start-line="276" selection-start-column="41" selection-end-line="276" selection-end-column="41" />
+        <state relative-caret-position="265">
+          <caret line="215" column="25" lean-forward="true" selection-start-line="215" selection-start-column="25" selection-end-line="215" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LESS方法/sky_test.less" />
     <entry file="file://$PROJECT_DIR$/LESS方法/sky_test.css" />
     <entry file="file://$PROJECT_DIR$/LESS方法/1.html" />
-    <entry file="file://$PROJECT_DIR$/输入框的placeholder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LESS_learn/sky_test.less" />
     <entry file="file://$PROJECT_DIR$/LESS_learn/less.js" />
     <entry file="file://$PROJECT_DIR$/LESS_learn/1.html" />
@@ -506,13 +432,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/选择器相关测试/选择器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/选择器相关测试/选择器.html" />
     <entry file="file://$PROJECT_DIR$/LESS_learn/2_嵌套/sky_test.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -555,13 +475,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LESS_learn/3_混合方法/4.mingmingkongjian.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/LESS_learn/3_混合方法/4.mingmingkongjian.less" />
     <entry file="file://$PROJECT_DIR$/LESS_learn/3_混合方法/3.方法的匹配模式.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -634,11 +548,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LESS_learn/3_混合方法/7.调用返回值的一个实战技巧.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="396">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/layUI_demo/st.scss" />
+    <entry file="file://$PROJECT_DIR$/输入框的placeholder.html" />
   </component>
 </project>
